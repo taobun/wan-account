@@ -8,7 +8,7 @@ from eth_abi.exceptions import (
     ABITypeError,
 )
 
-from eth_account import (
+from wan_account import (
     Account,
 )
 

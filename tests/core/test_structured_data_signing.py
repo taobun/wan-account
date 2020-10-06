@@ -13,10 +13,10 @@ from hexbytes import (
     HexBytes,
 )
 
-from eth_account import (
+from wan_account import (
     Account,
 )
-from eth_account._utils.structured_data.hashing import (
+from wan_account._utils.structured_data.hashing import (
     encode_data,
     encode_struct,
     encode_type,
@@ -27,10 +27,10 @@ from eth_account._utils.structured_data.hashing import (
     hash_struct_type,
     load_and_validate_structured_message,
 )
-from eth_account._utils.structured_data.validation import (
+from wan_account._utils.structured_data.validation import (
     TYPE_REGEX,
 )
-from eth_account.messages import (
+from wan_account.messages import (
     _hash_eip191_message,
     encode_structured_data,
 )

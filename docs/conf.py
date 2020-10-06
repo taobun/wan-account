@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# eth-account documentation build configuration file, created by
+# wan-account documentation build configuration file, created by
 # sphinx-quickstart on Thu Oct 16 20:43:24 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -53,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'eth-account'
+project = 'wan-account'
 copyright = '2020, The Ethereum Foundation'
 
 __version__ = setup_version
@@ -81,8 +81,8 @@ release = __version__
 exclude_patterns = [
     '_build',
     'modules.rst',
-    'eth_account.internal.rst',
-    'eth_account.hdaccount.rst',
+    'wan_account.internal.rst',
+    'wan_account.hdaccount.rst',
 ]
 
 # The reST default role (used for this markup: `text`) to use for all
@@ -191,7 +191,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'eth_accountdoc'
+htmlhelp_basename = 'wan_accountdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -211,7 +211,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'eth_account.tex', 'eth-account Documentation',
+  ('index', 'wan_account.tex', 'wan-account Documentation',
    'The Ethereum Foundation', 'manual'),
 ]
 
@@ -241,7 +241,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'eth_account', 'eth-account Documentation',
+    ('index', 'wan_account', 'wan-account Documentation',
      ['The Ethereum Foundation'], 1)
 ]
 
@@ -255,8 +255,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'eth-account', 'eth-account Documentation',
-   'The Ethereum Foundation', 'eth-account', 'Sign Ethereum transactions and messages with local private keys',
+  ('index', 'wan-account', 'wan-account Documentation',
+   'The Ethereum Foundation', 'wan-account', 'Sign Ethereum transactions and messages with local private keys',
    'Miscellaneous'),
 ]
 

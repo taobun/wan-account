@@ -1,1 +1,1 @@
-eth-account[doc]
+wan-account[doc]

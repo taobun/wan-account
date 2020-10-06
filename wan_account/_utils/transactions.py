@@ -90,6 +90,7 @@ TRANSACTION_DEFAULTS = {
 }
 
 TRANSACTION_FORMATTERS = {
+    'Txtype': hexstr_if_str(to_int),
     'nonce': hexstr_if_str(to_int),
     'gasPrice': hexstr_if_str(to_int),
     'gas': hexstr_if_str(to_int),
@@ -116,6 +117,7 @@ TRANSACTION_VALID_VALUES = {
 }
 
 ALLOWED_TRANSACTION_KEYS = {
+    'Txtype',
     'nonce',
     'gasPrice',
     'gas',
@@ -162,6 +164,7 @@ def fill_transaction_defaults(transaction):
 
 
 UNSIGNED_TRANSACTION_FIELDS = (
+    ('Txtype', big_endian_int),
     ('nonce', big_endian_int),
     ('gasPrice', big_endian_int),
     ('gas', big_endian_int),

@@ -4,16 +4,16 @@ eth\_account
 Account
 ----------------------------
 
-.. automodule:: eth_account.account
+.. automodule:: wan_account.account
     :members:
     :undoc-members:
 
-See :doc:`eth_account.signers` for alternative signers.
+See :doc:`wan_account.signers` for alternative signers.
 
 SignedTransaction & SignedMessage
 -----------------------------------
 
-.. automodule:: eth_account.datastructures
+.. automodule:: wan_account.datastructures
     :members:
     :undoc-members:
     :show-inheritance:
@@ -21,7 +21,7 @@ SignedTransaction & SignedMessage
 Messages
 ---------------------------
 
-.. automodule:: eth_account.messages
+.. automodule:: wan_account.messages
     :members:
     :undoc-members:
     :show-inheritance:

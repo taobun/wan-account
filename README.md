@@ -1,25 +1,24 @@
-# eth-account
+# wan-account
 
-[![Join the chat at https://gitter.im/ethereum/eth-account](https://badges.gitter.im/ethereum/eth-account.svg)](https://gitter.im/ethereum/eth-account?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://circleci.com/gh/ethereum/eth-account.svg?style=shield)](https://circleci.com/gh/ethereum/eth-account)
-[![PyPI version](https://badge.fury.io/py/eth-account.svg)](https://badge.fury.io/py/eth-account)
-[![Python versions](https://img.shields.io/pypi/pyversions/eth-account.svg)](https://pypi.python.org/pypi/eth-account)
-[![Docs build](https://readthedocs.org/projects/eth-account/badge/?version=latest)](http://eth-account.readthedocs.io/en/latest/?badge=latest)
-   
+[![Join the chat at https://gitter.im/ethereum/wan-account](https://badges.gitter.im/ethereum/wan-account.svg)](https://gitter.im/ethereum/wan-account?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://circleci.com/gh/ethereum/wan-account.svg?style=shield)](https://circleci.com/gh/ethereum/wan-account)
+[![PyPI version](https://badge.fury.io/py/wan-account.svg)](https://badge.fury.io/py/wan-account)
+[![Python versions](https://img.shields.io/pypi/pyversions/wan-account.svg)](https://pypi.python.org/pypi/wan-account)
+[![Docs build](https://readthedocs.org/projects/wan-account/badge/?version=latest)](http://wan-account.readthedocs.io/en/latest/?badge=latest)
 
 Sign Ethereum transactions and messages with local private keys
 
-Read more in the [documentation on ReadTheDocs](http://eth-account.readthedocs.io/). [View the change log](http://eth-account.readthedocs.io/en/latest/releases.html)
+Read more in the [documentation on ReadTheDocs](http://wan-account.readthedocs.io/). [View the change log](http://wan-account.readthedocs.io/en/latest/releases.html)
 
 ## Quickstart
 
 ```sh
-pip install eth-account
+pip install wan-account
 ```
 
 ## Developer Setup
 
-If you would like to hack on eth-account, please check out the [Snake Charmers
+If you would like to hack on wan-account, please check out the [Snake Charmers
 Tactical Manual](https://github.com/ethereum/snake-charmers-tactical-manual)
 for information on how we do:
 
@@ -33,8 +32,8 @@ for information on how we do:
 You can set up your dev environment with:
 
 ```sh
-git clone git@github.com:ethereum/eth-account.git
-cd eth-account
+git clone git@github.com:ethereum/wan-account.git
+cd wan-account
 virtualenv -p python3 venv
 . venv/bin/activate
 pip install -e .[dev]
@@ -57,7 +56,7 @@ Show flake8 errors on file change:
 
 ```sh
 # Test flake8
-when-changed -v -s -r -1 eth_account/ tests/ -c "clear; flake8 eth_account tests && echo 'flake8 success' || echo 'error'"
+when-changed -v -s -r -1 wan_account/ tests/ -c "clear; flake8 wan_account tests && echo 'flake8 success' || echo 'error'"
 ```
 
 Run multi-process tests in one command, but without color:
@@ -73,12 +72,13 @@ Run in one thread, with color and desktop notifications:
 
 ```sh
 cd venv
-ptw --onfail "notify-send -t 5000 'Test failure ⚠⚠⚠⚠⚠' 'python 3 test on eth-account failed'" ../tests ../eth_account
+ptw --onfail "notify-send -t 5000 'Test failure ⚠⚠⚠⚠⚠' 'python 3 test on wan-account failed'" ../tests ../wan_account
 ```
 
 ### Release setup
 
 For Debian-like systems:
+
 ```
 apt install pandoc
 ```

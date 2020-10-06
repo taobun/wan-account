@@ -45,17 +45,17 @@ with open('./README.md') as readme:
 
 
 setup(
-    name='eth-account',
+    name='wan-account',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
-    version='0.5.3',
-    description="""eth-account: Sign Ethereum transactions and messages with local private keys""",
+    version='0.0.3',
+    description="""wan-account: Sign WanChain transactions and messages with local private keys""",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='The Ethereum Foundation',
-    author_email='snakecharmers@ethereum.org',
-    url='https://github.com/ethereum/eth-account',
+    author='Bun Uthaitirat',
+    author_email='taobunoi@gmail.com',
+    url='https://github.com/taobun/wan-account',
     include_package_data=True,
-    package_data={"eth_account": ["hdaccount/wordlist/*.txt"]},
+    package_data={"wan_account": ["hdaccount/wordlist/*.txt"]},
     install_requires=[
         "bitarray>=1.2.1,<1.3.0",
         "eth-abi>=2.0.0b7,<3",
@@ -68,10 +68,10 @@ setup(
     ],
     python_requires='>=3.6, <4',
     extras_require=extras_require,
-    py_modules=['eth_account'],
+    py_modules=['wan_account'],
     license="MIT",
     zip_safe=False,
-    keywords='ethereum',
+    keywords='wanchain',
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[
         'Development Status :: 3 - Alpha',
